@@ -1,0 +1,68 @@
+{
+  "companies": [
+    {
+      "company_id": "com_1",
+      "company_name": "테크 스타트업",
+      "categories": [
+        { 
+          "category_id": "cat_101", 
+          "category_name": "소액 교통비",
+          "keywords": ["지하철", "버스", "교통"],
+          "exclude_keywords": ["택시", "대리운전"],
+          "min_amount": 1000,
+          "max_amount": 5000,
+          "priority": 5
+        },
+        { 
+          "category_id": "cat_102", 
+          "category_name": "고액 교통비", 
+          "keywords": ["택시", "대리운전", "교통"],
+          "exclude_keywords": ["지하철", "버스"],
+          "min_amount": 10000,
+          "max_amount": 100000,
+          "priority": 8
+        },
+        { 
+          "category_id": "cat_103", 
+          "category_name": "일반 식비",
+          "keywords": ["배달의민족", "음식", "식당"],
+          "exclude_keywords": ["회식", "접대"],
+          "min_amount": 5000,
+          "max_amount": 30000,
+          "priority": 3
+        },
+        { 
+          "category_id": "cat_104", 
+          "category_name": "접대비",
+          "keywords": ["음식", "식당", "회식"],
+          "exclude_keywords": ["배달"],
+          "min_amount": 50000,
+          "max_amount": 500000,
+          "priority": 10
+        }
+      ]
+    },
+    {
+      "company_id": "com_2",
+      "company_name": "디자인 에이전시", 
+      "categories": [
+        { 
+          "category_id": "cat_201", 
+          "category_name": "소프트웨어 구독료",
+          "keywords": ["어도비", "피그마", "구독"],
+          "min_amount": 10000,
+          "max_amount": 100000,
+          "priority": 7
+        },
+        { 
+          "category_id": "cat_202", 
+          "category_name": "클라우드 서비스",
+          "keywords": ["AWS", "네이버클라우드", "구글"],
+          "exclude_keywords": ["광고"],
+          "min_amount": 20000,
+          "priority": 6
+        }
+      ]
+    }
+  ]
+}

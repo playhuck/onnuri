@@ -1,0 +1,46 @@
+{
+  "companies": [
+    {
+      "company_id": "com_1",
+      "company_name": "A 커머스",
+      "categories": [
+        { 
+          "category_id": "cat_101", 
+          "category_name": "온라인 쇼핑몰",
+          "keywords": ["쿠팡", "결제"],
+          "priority": 5
+        },
+        { 
+          "category_id": "cat_102", 
+          "category_name": "배송비", 
+          "keywords": ["쿠팡", "배송"],
+          "priority": 8
+        }
+      ]
+    },
+    {
+      "company_id": "com_2", 
+      "company_name": "B 커머스",
+      "categories": [
+        { 
+          "category_id": "cat_201", 
+          "category_name": "커피전문점",
+          "keywords": ["스타벅스", "아메리카노"],
+          "priority": 3
+        },
+        { 
+          "category_id": "cat_202", 
+          "category_name": "복리후생비",
+          "keywords": ["스타벅스", "직원"],
+          "priority": 9
+        },
+        { 
+          "category_id": "cat_203", 
+          "category_name": "회의비",
+          "keywords": ["스타벅스", "미팅"], 
+          "priority": 6
+        }
+      ]
+    }
+  ]
+}
