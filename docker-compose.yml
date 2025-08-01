@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: onnuri-postgres
+    environment:
+      POSTGRES_DB: onnuri
+      POSTGRES_USER: onnuri
+      POSTGRES_PASSWORD: onnuri123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U onnuri"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build: .
+    container_name: onnuri-app
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/onnuri
+      SPRING_DATASOURCE_USERNAME: onnuri
+      SPRING_DATASOURCE_PASSWORD: onnuri123
+      SPRING_JPA_HIBERNATE_DDL_AUTO: create-drop
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  postgres_data:

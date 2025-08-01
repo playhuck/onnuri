@@ -1,0 +1,715 @@
+2025-08-01 22:12:17.644 [restartedMain] INFO  [com.side.onnuri.OnnuriApplication] - Starting OnnuriApplication using Java 21.0.6 with PID 17354 (/Users/playhuck/project/side/onnuri/build/classes/java/main started by playhuck in /Users/playhuck/project/side/onnuri)
+2025-08-01 22:12:17.644 [restartedMain] DEBUG [com.side.onnuri.OnnuriApplication] - Running with Spring Boot v3.2.11, Spring v6.1.14
+2025-08-01 22:12:17.645 [restartedMain] INFO  [com.side.onnuri.OnnuriApplication] - The following 1 profile is active: "dev"
+2025-08-01 22:12:17.678 [restartedMain] INFO  [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-01 22:12:17.678 [restartedMain] INFO  [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-01 22:12:18.367 [restartedMain] INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01 22:12:18.412 [restartedMain] INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 41 ms. Found 6 JPA repository interfaces.
+2025-08-01 22:12:18.915 [restartedMain] INFO  [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-08-01 22:12:18.924 [restartedMain] INFO  [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-08-01 22:12:18.925 [restartedMain] INFO  [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-08-01 22:12:18.950 [restartedMain] INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-08-01 22:12:18.951 [restartedMain] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1272 ms
+2025-08-01 22:12:19.147 [restartedMain] INFO  [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01 22:12:19.179 [restartedMain] INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.4.10.Final
+2025-08-01 22:12:19.196 [restartedMain] INFO  [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-08-01 22:12:19.330 [restartedMain] INFO  [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01 22:12:19.347 [restartedMain] WARN  [org.hibernate.orm.deprecation] - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01 22:12:19.933 [restartedMain] INFO  [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01 22:12:19.941 [restartedMain] DEBUG [org.hibernate.SQL] - alter table if exists account_categories drop constraint if exists FKf6hrc8xcb9tt88juq1vywdtvd
+2025-08-01 22:12:19.942 [restartedMain] INFO  [com.zaxxer.hikari.HikariDataSource] - OnnuriAccountingHikariCP - Starting...
+2025-08-01 22:12:20.057 [restartedMain] INFO  [com.zaxxer.hikari.pool.HikariPool] - OnnuriAccountingHikariCP - Added connection org.postgresql.jdbc.PgConnection@392eefc3
+2025-08-01 22:12:20.058 [restartedMain] INFO  [com.zaxxer.hikari.HikariDataSource] - OnnuriAccountingHikariCP - Start completed.
+2025-08-01 22:12:20.063 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - SQL Warning Code: 0, SQLState: 00000
+2025-08-01 22:12:20.063 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - relation "account_categories" does not exist, skipping
+2025-08-01 22:12:20.063 [restartedMain] DEBUG [org.hibernate.SQL] - alter table if exists category_keywords drop constraint if exists FKilf25is1yjnb4hdndxbv0soii
+2025-08-01 22:12:20.064 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - SQL Warning Code: 0, SQLState: 00000
+2025-08-01 22:12:20.064 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - relation "category_keywords" does not exist, skipping
+2025-08-01 22:12:20.065 [restartedMain] DEBUG [org.hibernate.SQL] - drop table if exists account_categories cascade
+2025-08-01 22:12:20.066 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - SQL Warning Code: 0, SQLState: 00000
+2025-08-01 22:12:20.066 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - table "account_categories" does not exist, skipping
+2025-08-01 22:12:20.066 [restartedMain] DEBUG [org.hibernate.SQL] - drop table if exists bank_transactions cascade
+2025-08-01 22:12:20.067 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - SQL Warning Code: 0, SQLState: 00000
+2025-08-01 22:12:20.067 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - table "bank_transactions" does not exist, skipping
+2025-08-01 22:12:20.067 [restartedMain] DEBUG [org.hibernate.SQL] - drop table if exists category_keywords cascade
+2025-08-01 22:12:20.068 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - SQL Warning Code: 0, SQLState: 00000
+2025-08-01 22:12:20.068 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - table "category_keywords" does not exist, skipping
+2025-08-01 22:12:20.068 [restartedMain] DEBUG [org.hibernate.SQL] - drop table if exists companies cascade
+2025-08-01 22:12:20.068 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - SQL Warning Code: 0, SQLState: 00000
+2025-08-01 22:12:20.068 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - table "companies" does not exist, skipping
+2025-08-01 22:12:20.068 [restartedMain] DEBUG [org.hibernate.SQL] - drop table if exists rule_versions cascade
+2025-08-01 22:12:20.069 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - SQL Warning Code: 0, SQLState: 00000
+2025-08-01 22:12:20.069 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - table "rule_versions" does not exist, skipping
+2025-08-01 22:12:20.069 [restartedMain] DEBUG [org.hibernate.SQL] - drop table if exists transaction_classifications cascade
+2025-08-01 22:12:20.070 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - SQL Warning Code: 0, SQLState: 00000
+2025-08-01 22:12:20.070 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - table "transaction_classifications" does not exist, skipping
+2025-08-01 22:12:20.070 [restartedMain] DEBUG [org.hibernate.SQL] - drop table if exists transaction_events cascade
+2025-08-01 22:12:20.071 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - SQL Warning Code: 0, SQLState: 00000
+2025-08-01 22:12:20.071 [restartedMain] WARN  [o.h.e.jdbc.spi.SqlExceptionHelper] - table "transaction_events" does not exist, skipping
+2025-08-01 22:12:20.076 [restartedMain] DEBUG [org.hibernate.SQL] - create table account_categories (max_amount numeric(19,2), min_amount numeric(19,2), priority integer, company_id uuid not null, id uuid not null, rule_version_id uuid not null, category_id varchar(50) not null, category_name varchar(200) not null, exclude_keywords jsonb, primary key (id))
+2025-08-01 22:12:20.104 [restartedMain] DEBUG [org.hibernate.SQL] - create table bank_transactions (created_at timestamp(6), id uuid not null, attributes json, primary key (id))
+2025-08-01 22:12:20.111 [restartedMain] DEBUG [org.hibernate.SQL] - create table category_keywords (category_id uuid not null, id uuid not null, keyword varchar(100) not null, primary key (id))
+2025-08-01 22:12:20.114 [restartedMain] DEBUG [org.hibernate.SQL] - create table companies (id uuid not null, company_id varchar(50) not null unique, company_name varchar(200) not null, primary key (id))
+2025-08-01 22:12:20.118 [restartedMain] DEBUG [org.hibernate.SQL] - create table rule_versions (active boolean not null, is_consumed boolean not null, uploaded_at timestamp(6) not null, used_at timestamp(6), id uuid not null, version_name varchar(100) not null, description varchar(500), rule_data jsonb not null, primary key (id))
+2025-08-01 22:12:20.123 [restartedMain] DEBUG [org.hibernate.SQL] - create table transaction_classifications (confidence float4, classified_at timestamp(6) not null, category_id uuid, company_id uuid, id uuid not null, rule_version_id uuid, transaction_id uuid not null, rule_version varchar(50), matched_keyword varchar(100), category_name varchar(200), company_name varchar(200), status varchar(255) not null check (status in ('CLASSIFIED','UNCLASSIFIED')), primary key (id))
+2025-08-01 22:12:20.129 [restartedMain] DEBUG [org.hibernate.SQL] - create table transaction_events (occurred_at timestamp(6) not null, category_id uuid, company_id uuid, event_id uuid not null, transaction_id uuid not null, event_type varchar(50) not null, matched_keyword varchar(100), status varchar(255) not null check (status in ('CLASSIFIED','UNCLASSIFIED')), primary key (event_id))
+2025-08-01 22:12:20.132 [restartedMain] DEBUG [org.hibernate.SQL] - create index idx_active on rule_versions (active)
+2025-08-01 22:12:20.134 [restartedMain] DEBUG [org.hibernate.SQL] - create index idx_is_consumed on rule_versions (is_consumed)
+2025-08-01 22:12:20.136 [restartedMain] DEBUG [org.hibernate.SQL] - create index idx_uploaded_at on rule_versions (uploaded_at)
+2025-08-01 22:12:20.138 [restartedMain] DEBUG [org.hibernate.SQL] - create index idx_transaction_id on transaction_classifications (transaction_id)
+2025-08-01 22:12:20.140 [restartedMain] DEBUG [org.hibernate.SQL] - create index idx_company_id on transaction_classifications (company_id)
+2025-08-01 22:12:20.142 [restartedMain] DEBUG [org.hibernate.SQL] - create index idx_classified_at on transaction_classifications (classified_at)
+2025-08-01 22:12:20.144 [restartedMain] DEBUG [org.hibernate.SQL] - create index idx_transaction_id_event on transaction_events (transaction_id)
+2025-08-01 22:12:20.146 [restartedMain] DEBUG [org.hibernate.SQL] - create index idx_occurred_at on transaction_events (occurred_at)
+2025-08-01 22:12:20.149 [restartedMain] DEBUG [org.hibernate.SQL] - create index idx_event_type on transaction_events (event_type)
+2025-08-01 22:12:20.151 [restartedMain] DEBUG [org.hibernate.SQL] - alter table if exists account_categories add constraint FKf6hrc8xcb9tt88juq1vywdtvd foreign key (company_id) references companies
+2025-08-01 22:12:20.159 [restartedMain] DEBUG [org.hibernate.SQL] - alter table if exists category_keywords add constraint FKilf25is1yjnb4hdndxbv0soii foreign key (category_id) references account_categories
+2025-08-01 22:12:20.163 [restartedMain] INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01 22:12:20.387 [restartedMain] INFO  [o.s.d.j.r.query.QueryEnhancerFactory] - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-01 22:12:21.385 [restartedMain] INFO  [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-08-01 22:12:21.391 [restartedMain] INFO  [o.s.b.a.e.web.EndpointLinksResolver] - Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-08-01 22:12:21.459 [restartedMain] INFO  [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path ''
+2025-08-01 22:12:21.473 [restartedMain] INFO  [com.side.onnuri.OnnuriApplication] - Started OnnuriApplication in 4.277 seconds (process running for 5.486)
+2025-08-01 22:12:21.478 [restartedMain] INFO  [c.s.o.a.a.s.i.DataInitializer] - Company & Rule,미분류 data Initializing 시작
+2025-08-01 22:12:21.510 [restartedMain] DEBUG [org.hibernate.SQL] - select ce1_0.id,ce1_0.company_id,ce1_0.company_name,c1_0.company_id,c1_0.id,c1_0.category_id,c1_0.category_name,c1_0.exclude_keywords,c1_0.max_amount,c1_0.min_amount,c1_0.priority,c1_0.rule_version_id from companies ce1_0 left join account_categories c1_0 on ce1_0.id=c1_0.company_id where ce1_0.id=?
+2025-08-01 22:12:21.540 [restartedMain] DEBUG [org.hibernate.SQL] - insert into companies (company_id,company_name,id) values (?,?,?)
+2025-08-01 22:12:21.550 [restartedMain] DEBUG [org.hibernate.SQL] - select rve1_0.id,rve1_0.active,rve1_0.description,rve1_0.is_consumed,rve1_0.rule_data,rve1_0.uploaded_at,rve1_0.used_at,rve1_0.version_name from rule_versions rve1_0 where rve1_0.id=?
+2025-08-01 22:12:21.562 [restartedMain] DEBUG [org.hibernate.SQL] - insert into rule_versions (active,description,is_consumed,rule_data,uploaded_at,used_at,version_name,id) values (?,?,?,?,?,?,?,?)
+2025-08-01 22:12:21.566 [RMI TCP Connection(2)-127.0.0.1] INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01 22:12:21.566 [RMI TCP Connection(2)-127.0.0.1] INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2025-08-01 22:12:21.567 [RMI TCP Connection(2)-127.0.0.1] INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2025-08-01 22:12:21.572 [restartedMain] DEBUG [org.hibernate.SQL] - select ace1_0.id,ace1_0.category_id,ace1_0.category_name,ace1_0.company_id,ace1_0.exclude_keywords,ace1_0.max_amount,ace1_0.min_amount,ace1_0.priority,ace1_0.rule_version_id,k1_0.category_id,k1_0.id,k1_0.keyword from account_categories ace1_0 left join category_keywords k1_0 on ace1_0.id=k1_0.category_id where ace1_0.id=?
+2025-08-01 22:12:21.577 [restartedMain] DEBUG [org.hibernate.SQL] - insert into account_categories (category_id,category_name,company_id,exclude_keywords,max_amount,min_amount,priority,rule_version_id,id) values (?,?,?,?,?,?,?,?,?)
+2025-08-01 22:12:21.579 [restartedMain] INFO  [c.s.o.a.a.s.i.DataInitializer] - Company & Rule,미분류 data Initializing 성공
+2025-08-01 22:12:44.129 [http-nio-8080-exec-1] INFO  [c.s.o.a.a.s.ProcessTransactionUseCaseImpl] - 자동 회계 처리 시작 - CSV: null, JSON: null
+2025-08-01 22:12:44.132 [http-nio-8080-exec-1] ERROR [c.s.o.c.e.GlobalExceptionHandler] - FileNotFoundException: CSV 파일과 JSON 파일이 모두 필요합니다.
+com.side.onnuri.common.exception.FileNotFoundException: CSV 파일과 JSON 파일이 모두 필요합니다.
+	at com.side.onnuri.accounting.application.service.ProcessTransactionUseCaseImpl.execute(ProcessTransactionUseCaseImpl.java:37)
+	at com.side.onnuri.accounting.presentation.AccountingController.processTransactions(AccountingController.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-01 22:12:44.161 [http-nio-8080-exec-1] WARN  [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] - Resolved [com.side.onnuri.common.exception.FileNotFoundException: CSV 파일과 JSON 파일이 모두 필요합니다.]
+2025-08-01 22:13:19.502 [http-nio-8080-exec-2] INFO  [c.s.o.a.a.s.ProcessTransactionUseCaseImpl] - 자동 회계 처리 시작 - CSV: null, JSON: null
+2025-08-01 22:13:19.504 [http-nio-8080-exec-2] ERROR [c.s.o.c.e.GlobalExceptionHandler] - FileNotFoundException: CSV 파일과 JSON 파일이 모두 필요합니다.
+com.side.onnuri.common.exception.FileNotFoundException: CSV 파일과 JSON 파일이 모두 필요합니다.
+	at com.side.onnuri.accounting.application.service.ProcessTransactionUseCaseImpl.execute(ProcessTransactionUseCaseImpl.java:37)
+	at com.side.onnuri.accounting.presentation.AccountingController.processTransactions(AccountingController.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-01 22:13:19.510 [http-nio-8080-exec-2] WARN  [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] - Resolved [com.side.onnuri.common.exception.FileNotFoundException: CSV 파일과 JSON 파일이 모두 필요합니다.]
+2025-08-01 22:15:19.496 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.ProcessTransactionUseCaseImpl] - 자동 회계 처리 시작 - CSV: bank_transaction.csv, JSON: rules.json
+2025-08-01 22:15:19.523 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.FileProcessingService] - CSV 헤더 파싱 완료: [거래일시, 적요, 입금액, 출금액, 거래후잔액, 거래점                                                                                                                        │ │]
+2025-08-01 22:15:19.524 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TypeInferenceService] - 타입 추론 결과 - 거래일시: 2025-07-20 13:45:11 -> LocalDateTime
+2025-08-01 22:15:19.524 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TypeInferenceService] - 타입 추론 결과 - 적요: 스타벅스 강남2호점 -> String
+2025-08-01 22:15:19.525 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TypeInferenceService] - 타입 추론 결과 - 입금액: 0 -> BigDecimal
+2025-08-01 22:15:19.525 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TypeInferenceService] - 타입 추론 결과 - 출금액: 5500 -> BigDecimal
+2025-08-01 22:15:19.525 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TypeInferenceService] - 타입 추론 결과 - 거래후잔액: 994500 -> BigDecimal
+2025-08-01 22:15:19.525 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TypeInferenceService] - 타입 추론 결과 - 거래점                                                                                                                        │ │: 강남지점                                                                                                        │ │ -> String
+2025-08-01 22:15:19.525 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.FileProcessingService] - 타입 추론 완료: {거래후잔액=class java.math.BigDecimal, 거래일시=class java.time.LocalDateTime, 거래점                                                                                                                        │ │=class java.lang.String, 적요=class java.lang.String, 입금액=class java.math.BigDecimal, 출금액=class java.math.BigDecimal}
+2025-08-01 22:15:19.525 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.FileProcessingService] - 파싱 중인 레코드: [2025-07-20 13:45:11, 스타벅스 강남2호점, 0, 5500, 994500, 강남지점                                                                                                        │ │]
+2025-08-01 22:15:19.526 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.FileProcessingService] - 파싱 중인 레코드: [2025-07-20 15:12:30, (주)배달의민족, 0, 25000, 969500, 강남지점                                                                                                           │ │]
+2025-08-01 22:15:19.526 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.FileProcessingService] - 파싱 중인 레코드: [2025-07-20 19:03:01, 카카오 T, 0, 12500, 957000, 강남지점                                                                                                                 │ │]
+2025-08-01 22:15:19.527 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.FileProcessingService] - 파싱 중인 레코드: [2025-07-21 09:30:00, 네이버페이(주), 150000, 0, 1107000, 온라인                                                                                                           │ │]
+2025-08-01 22:15:19.527 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.FileProcessingService] - 파싱 중인 레코드: [2025-07-21 12:10:05, 김밥천국 역삼점, 0, 8000, 1099000, 역삼지점                                                                                                          │ │]
+2025-08-01 22:15:19.527 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.FileProcessingService] - 파싱 중인 레코드: [2025-07-21 14:20:40, (주)쿠팡, 250000, 0, 1349000, 온라인                                                                                                                 │ │]
+2025-08-01 22:15:19.527 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.FileProcessingService] - 파싱 중인 레코드: [2025-07-21 21:00:15, 개인용도 이체, 0, 100000, 1249000, 강남지점                                                                                                          │ │]
+2025-08-01 22:15:19.527 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.FileProcessingService] - 파싱 중인 레코드: [2025-07-22 11:55:10, 오피스디포(주), 0, 78000, 1171000, 강남지점                                                                                                          │ │]
+2025-08-01 22:15:19.527 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.FileProcessingService] - 파싱 중인 레코드: [2025-07-22 16:01:22, 우체국(등기), 0, 4500, 1166500, 역삼우체국  ]
+2025-08-01 22:15:19.529 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.FileProcessingService] - CSV 파싱 완료: 파일: bank_transaction.csv, 전체: 9건, 성공: 9건, 실패: 0건 (성공률: 100.0%)
+2025-08-01 22:15:19.550 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.FileProcessingService] - JSON 파일에서 2개 회사의 규칙 데이터 파싱 완료
+2025-08-01 22:15:19.550 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.ProcessTransactionUseCaseImpl] - CSV 파싱 결과: 파일: bank_transaction.csv, 전체: 9건, 성공: 9건, 실패: 0건 (성공률: 100.0%)
+2025-08-01 22:15:19.562 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 규칙 버전 자동 저장 완료: v20250801-221519
+2025-08-01 22:15:19.600 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ce1_0.id,ce1_0.company_id,ce1_0.company_name from companies ce1_0 where ce1_0.company_id=?
+2025-08-01 22:15:19.605 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ce1_0.id,ce1_0.company_id,ce1_0.company_name,c1_0.company_id,c1_0.id,c1_0.category_id,c1_0.category_name,c1_0.exclude_keywords,c1_0.max_amount,c1_0.min_amount,c1_0.priority,c1_0.rule_version_id from companies ce1_0 left join account_categories c1_0 on ce1_0.id=c1_0.company_id where ce1_0.id=?
+2025-08-01 22:15:19.607 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 새로운 회사 생성: com_1 (ID: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1)
+2025-08-01 22:15:19.610 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into rule_versions (active,description,is_consumed,rule_data,uploaded_at,used_at,version_name,id) values (?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.613 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into companies (company_id,company_name,id) values (?,?,?)
+2025-08-01 22:15:19.614 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ace1_0.id,ace1_0.category_id,ace1_0.category_name,ace1_0.company_id,ace1_0.exclude_keywords,ace1_0.max_amount,ace1_0.min_amount,ace1_0.priority,ace1_0.rule_version_id from account_categories ace1_0 where ace1_0.category_id=? and ace1_0.company_id=? and ace1_0.rule_version_id=?
+2025-08-01 22:15:19.615 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ace1_0.id,ace1_0.category_id,ace1_0.category_name,ace1_0.company_id,ace1_0.exclude_keywords,ace1_0.max_amount,ace1_0.min_amount,ace1_0.priority,ace1_0.rule_version_id,k1_0.category_id,k1_0.id,k1_0.keyword from account_categories ace1_0 left join category_keywords k1_0 on ace1_0.id=k1_0.category_id where ace1_0.id=?
+2025-08-01 22:15:19.617 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select cke1_0.id,cke1_0.category_id,cke1_0.keyword from category_keywords cke1_0 where cke1_0.id=?
+2025-08-01 22:15:19.618 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select cke1_0.id,cke1_0.category_id,cke1_0.keyword from category_keywords cke1_0 where cke1_0.id=?
+2025-08-01 22:15:19.621 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into account_categories (category_id,category_name,company_id,exclude_keywords,max_amount,min_amount,priority,rule_version_id,id) values (?,?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.623 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into category_keywords (category_id,keyword,id) values (?,?,?)
+2025-08-01 22:15:19.623 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into category_keywords (category_id,keyword,id) values (?,?,?)
+2025-08-01 22:15:19.627 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ace1_0.id,ace1_0.category_id,ace1_0.category_name,ace1_0.company_id,ace1_0.exclude_keywords,ace1_0.max_amount,ace1_0.min_amount,ace1_0.priority,ace1_0.rule_version_id from account_categories ace1_0 where ace1_0.category_id=? and ace1_0.company_id=? and ace1_0.rule_version_id=?
+2025-08-01 22:15:19.628 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ace1_0.id,ace1_0.category_id,ace1_0.category_name,ace1_0.company_id,ace1_0.exclude_keywords,ace1_0.max_amount,ace1_0.min_amount,ace1_0.priority,ace1_0.rule_version_id,k1_0.category_id,k1_0.id,k1_0.keyword from account_categories ace1_0 left join category_keywords k1_0 on ace1_0.id=k1_0.category_id where ace1_0.id=?
+2025-08-01 22:15:19.629 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select cke1_0.id,cke1_0.category_id,cke1_0.keyword from category_keywords cke1_0 where cke1_0.id=?
+2025-08-01 22:15:19.630 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select cke1_0.id,cke1_0.category_id,cke1_0.keyword from category_keywords cke1_0 where cke1_0.id=?
+2025-08-01 22:15:19.632 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into account_categories (category_id,category_name,company_id,exclude_keywords,max_amount,min_amount,priority,rule_version_id,id) values (?,?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.633 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into category_keywords (category_id,keyword,id) values (?,?,?)
+2025-08-01 22:15:19.633 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into category_keywords (category_id,keyword,id) values (?,?,?)
+2025-08-01 22:15:19.634 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ace1_0.id,ace1_0.category_id,ace1_0.category_name,ace1_0.company_id,ace1_0.exclude_keywords,ace1_0.max_amount,ace1_0.min_amount,ace1_0.priority,ace1_0.rule_version_id from account_categories ace1_0 where ace1_0.category_id=? and ace1_0.company_id=? and ace1_0.rule_version_id=?
+2025-08-01 22:15:19.635 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ace1_0.id,ace1_0.category_id,ace1_0.category_name,ace1_0.company_id,ace1_0.exclude_keywords,ace1_0.max_amount,ace1_0.min_amount,ace1_0.priority,ace1_0.rule_version_id,k1_0.category_id,k1_0.id,k1_0.keyword from account_categories ace1_0 left join category_keywords k1_0 on ace1_0.id=k1_0.category_id where ace1_0.id=?
+2025-08-01 22:15:19.636 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select cke1_0.id,cke1_0.category_id,cke1_0.keyword from category_keywords cke1_0 where cke1_0.id=?
+2025-08-01 22:15:19.638 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ce1_0.id,ce1_0.company_id,ce1_0.company_name from companies ce1_0 where ce1_0.company_id=?
+2025-08-01 22:15:19.639 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ce1_0.id,ce1_0.company_id,ce1_0.company_name,c1_0.company_id,c1_0.id,c1_0.category_id,c1_0.category_name,c1_0.exclude_keywords,c1_0.max_amount,c1_0.min_amount,c1_0.priority,c1_0.rule_version_id from companies ce1_0 left join account_categories c1_0 on ce1_0.id=c1_0.company_id where ce1_0.id=?
+2025-08-01 22:15:19.640 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 새로운 회사 생성: com_2 (ID: 70fd80c1-979b-4226-bc5e-60c0fa52c7df)
+2025-08-01 22:15:19.642 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into account_categories (category_id,category_name,company_id,exclude_keywords,max_amount,min_amount,priority,rule_version_id,id) values (?,?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.643 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into category_keywords (category_id,keyword,id) values (?,?,?)
+2025-08-01 22:15:19.644 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into companies (company_id,company_name,id) values (?,?,?)
+2025-08-01 22:15:19.646 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ace1_0.id,ace1_0.category_id,ace1_0.category_name,ace1_0.company_id,ace1_0.exclude_keywords,ace1_0.max_amount,ace1_0.min_amount,ace1_0.priority,ace1_0.rule_version_id from account_categories ace1_0 where ace1_0.category_id=? and ace1_0.company_id=? and ace1_0.rule_version_id=?
+2025-08-01 22:15:19.647 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ace1_0.id,ace1_0.category_id,ace1_0.category_name,ace1_0.company_id,ace1_0.exclude_keywords,ace1_0.max_amount,ace1_0.min_amount,ace1_0.priority,ace1_0.rule_version_id,k1_0.category_id,k1_0.id,k1_0.keyword from account_categories ace1_0 left join category_keywords k1_0 on ace1_0.id=k1_0.category_id where ace1_0.id=?
+2025-08-01 22:15:19.648 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select cke1_0.id,cke1_0.category_id,cke1_0.keyword from category_keywords cke1_0 where cke1_0.id=?
+2025-08-01 22:15:19.649 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select cke1_0.id,cke1_0.category_id,cke1_0.keyword from category_keywords cke1_0 where cke1_0.id=?
+2025-08-01 22:15:19.651 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into account_categories (category_id,category_name,company_id,exclude_keywords,max_amount,min_amount,priority,rule_version_id,id) values (?,?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.652 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into category_keywords (category_id,keyword,id) values (?,?,?)
+2025-08-01 22:15:19.652 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into category_keywords (category_id,keyword,id) values (?,?,?)
+2025-08-01 22:15:19.653 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ace1_0.id,ace1_0.category_id,ace1_0.category_name,ace1_0.company_id,ace1_0.exclude_keywords,ace1_0.max_amount,ace1_0.min_amount,ace1_0.priority,ace1_0.rule_version_id from account_categories ace1_0 where ace1_0.category_id=? and ace1_0.company_id=? and ace1_0.rule_version_id=?
+2025-08-01 22:15:19.654 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ace1_0.id,ace1_0.category_id,ace1_0.category_name,ace1_0.company_id,ace1_0.exclude_keywords,ace1_0.max_amount,ace1_0.min_amount,ace1_0.priority,ace1_0.rule_version_id,k1_0.category_id,k1_0.id,k1_0.keyword from account_categories ace1_0 left join category_keywords k1_0 on ace1_0.id=k1_0.category_id where ace1_0.id=?
+2025-08-01 22:15:19.655 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select cke1_0.id,cke1_0.category_id,cke1_0.keyword from category_keywords cke1_0 where cke1_0.id=?
+2025-08-01 22:15:19.656 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select cke1_0.id,cke1_0.category_id,cke1_0.keyword from category_keywords cke1_0 where cke1_0.id=?
+2025-08-01 22:15:19.658 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into account_categories (category_id,category_name,company_id,exclude_keywords,max_amount,min_amount,priority,rule_version_id,id) values (?,?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.659 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into category_keywords (category_id,keyword,id) values (?,?,?)
+2025-08-01 22:15:19.659 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into category_keywords (category_id,keyword,id) values (?,?,?)
+2025-08-01 22:15:19.660 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ace1_0.id,ace1_0.category_id,ace1_0.category_name,ace1_0.company_id,ace1_0.exclude_keywords,ace1_0.max_amount,ace1_0.min_amount,ace1_0.priority,ace1_0.rule_version_id from account_categories ace1_0 where ace1_0.category_id=? and ace1_0.company_id=? and ace1_0.rule_version_id=?
+2025-08-01 22:15:19.661 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ace1_0.id,ace1_0.category_id,ace1_0.category_name,ace1_0.company_id,ace1_0.exclude_keywords,ace1_0.max_amount,ace1_0.min_amount,ace1_0.priority,ace1_0.rule_version_id,k1_0.category_id,k1_0.id,k1_0.keyword from account_categories ace1_0 left join category_keywords k1_0 on ace1_0.id=k1_0.category_id where ace1_0.id=?
+2025-08-01 22:15:19.661 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select cke1_0.id,cke1_0.category_id,cke1_0.keyword from category_keywords cke1_0 where cke1_0.id=?
+2025-08-01 22:15:19.662 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select cke1_0.id,cke1_0.category_id,cke1_0.keyword from category_keywords cke1_0 where cke1_0.id=?
+2025-08-01 22:15:19.665 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into account_categories (category_id,category_name,company_id,exclude_keywords,max_amount,min_amount,priority,rule_version_id,id) values (?,?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.666 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into category_keywords (category_id,keyword,id) values (?,?,?)
+2025-08-01 22:15:19.666 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into category_keywords (category_id,keyword,id) values (?,?,?)
+2025-08-01 22:15:19.667 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ace1_0.id,ace1_0.category_id,ace1_0.category_name,ace1_0.company_id,ace1_0.exclude_keywords,ace1_0.max_amount,ace1_0.min_amount,ace1_0.priority,ace1_0.rule_version_id from account_categories ace1_0 where ace1_0.category_id=? and ace1_0.company_id=? and ace1_0.rule_version_id=?
+2025-08-01 22:15:19.668 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select ace1_0.id,ace1_0.category_id,ace1_0.category_name,ace1_0.company_id,ace1_0.exclude_keywords,ace1_0.max_amount,ace1_0.min_amount,ace1_0.priority,ace1_0.rule_version_id,k1_0.category_id,k1_0.id,k1_0.keyword from account_categories ace1_0 left join category_keywords k1_0 on ace1_0.id=k1_0.category_id where ace1_0.id=?
+2025-08-01 22:15:19.669 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select cke1_0.id,cke1_0.category_id,cke1_0.keyword from category_keywords cke1_0 where cke1_0.id=?
+2025-08-01 22:15:19.670 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 규칙 버전 b33b8c66-43da-423f-827d-b6a564fc6776에 대한 2개 회사 데이터 저장 완료
+2025-08-01 22:15:19.671 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select bte1_0.id,bte1_0.attributes,bte1_0.created_at from bank_transactions bte1_0 where bte1_0.id=?
+2025-08-01 22:15:19.679 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: A 커머스 (전체 카테고리: 3개, 현재 버전 카테고리: 3개)
+2025-08-01 22:15:19.680 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 매출 (키워드: [네이버페이, 쿠팡], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.680 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 식비 (키워드: [배달의민족, 김밥천국], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.680 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 사무용품비 (키워드: [오피스디포], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.680 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: B 커머스 (전체 카테고리: 4개, 현재 버전 카테고리: 4개)
+2025-08-01 22:15:19.680 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 교통비 (키워드: [카카오 T, 택시], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.680 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 통신비 (키워드: [KT, SKT], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.680 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 지급수수료 (키워드: [우체국, 등기], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.680 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 복리후생비 (키워드: [스타벅스], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.680 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 총 7개 매칭 규칙 생성 완료 (Rule Version: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.680 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 Trie 초기화 완료
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 네이버페이 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '네이버페이' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 쿠팡 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '쿠팡' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 배달의민족 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '배달의민족' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 김밥천국 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '김밥천국' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 오피스디포 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 01b7b568-efca-4f89-91aa-7827b58b17f8
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '오피스디포' -> A 커머스-사무용품비 (우선순위: 0)
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 카카오 T -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '카카오 T' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 택시 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '택시' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: KT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'KT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: SKT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'SKT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 우체국 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '우체국' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.681 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 등기 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.682 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '등기' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.682 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 스타벅스 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 05c5957e-ffe0-4f56-8883-1d4bcf4a1f42
+2025-08-01 22:15:19.682 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '스타벅스' -> B 커머스-복리후생비 (우선순위: 0)
+2025-08-01 22:15:19.682 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 규칙 7개로 Trie 구성 완료 (총 키워드: 12개)
+2025-08-01 22:15:19.682 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 매칭: 스타벅스 (위치: 0-3)
+2025-08-01 22:15:19.682 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 텍스트 '스타벅스 강남2호점' 에서 1개 키워드 매칭
+2025-08-01 22:15:19.682 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 거래 '스타벅스 강남2호점' - Trie에서 찾은 키워드 매칭: 1개
+2025-08-01 22:15:19.683 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 성공: 스타벅스 강남2호점 -> B 커머스(복리후생비) [점수: 1, 우선순위: 0, 적합도: {:.2f}]
+2025-08-01 22:15:19.684 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 고급 매칭 성공 - 거래: 스타벅스 강남2호점, 키워드: [스타벅스], 회사: B 커머스, 카테고리: 복리후생비, 점수: 1
+2025-08-01 22:15:19.687 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tce1_0.id,tce1_0.category_id,tce1_0.category_name,tce1_0.classified_at,tce1_0.company_id,tce1_0.company_name,tce1_0.confidence,tce1_0.matched_keyword,tce1_0.rule_version,tce1_0.rule_version_id,tce1_0.status,tce1_0.transaction_id from transaction_classifications tce1_0 where tce1_0.id=?
+2025-08-01 22:15:19.691 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tee1_0.event_id,tee1_0.category_id,tee1_0.company_id,tee1_0.event_type,tee1_0.matched_keyword,tee1_0.occurred_at,tee1_0.status,tee1_0.transaction_id from transaction_events tee1_0 where tee1_0.event_id=?
+2025-08-01 22:15:19.693 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select bte1_0.id,bte1_0.attributes,bte1_0.created_at from bank_transactions bte1_0 where bte1_0.id=?
+2025-08-01 22:15:19.694 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: A 커머스 (전체 카테고리: 3개, 현재 버전 카테고리: 3개)
+2025-08-01 22:15:19.694 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 매출 (키워드: [네이버페이, 쿠팡], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.694 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 식비 (키워드: [배달의민족, 김밥천국], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 사무용품비 (키워드: [오피스디포], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: B 커머스 (전체 카테고리: 4개, 현재 버전 카테고리: 4개)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 교통비 (키워드: [카카오 T, 택시], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 통신비 (키워드: [KT, SKT], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 지급수수료 (키워드: [우체국, 등기], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 복리후생비 (키워드: [스타벅스], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 총 7개 매칭 규칙 생성 완료 (Rule Version: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 Trie 초기화 완료
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 네이버페이 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '네이버페이' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 쿠팡 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '쿠팡' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 배달의민족 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '배달의민족' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 김밥천국 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '김밥천국' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 오피스디포 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 01b7b568-efca-4f89-91aa-7827b58b17f8
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '오피스디포' -> A 커머스-사무용품비 (우선순위: 0)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 카카오 T -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '카카오 T' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 택시 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '택시' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: KT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'KT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: SKT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'SKT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 우체국 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '우체국' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 등기 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '등기' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 스타벅스 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 05c5957e-ffe0-4f56-8883-1d4bcf4a1f42
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '스타벅스' -> B 커머스-복리후생비 (우선순위: 0)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 규칙 7개로 Trie 구성 완료 (총 키워드: 12개)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 매칭: 배달의민족 (위치: 3-7)
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 텍스트 '(주)배달의민족' 에서 1개 키워드 매칭
+2025-08-01 22:15:19.695 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 거래 '(주)배달의민족' - Trie에서 찾은 키워드 매칭: 1개
+2025-08-01 22:15:19.696 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 성공: (주)배달의민족 -> A 커머스(식비) [점수: 1, 우선순위: 0, 적합도: {:.2f}]
+2025-08-01 22:15:19.696 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 고급 매칭 성공 - 거래: (주)배달의민족, 키워드: [배달의민족], 회사: A 커머스, 카테고리: 식비, 점수: 1
+2025-08-01 22:15:19.696 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tce1_0.id,tce1_0.category_id,tce1_0.category_name,tce1_0.classified_at,tce1_0.company_id,tce1_0.company_name,tce1_0.confidence,tce1_0.matched_keyword,tce1_0.rule_version,tce1_0.rule_version_id,tce1_0.status,tce1_0.transaction_id from transaction_classifications tce1_0 where tce1_0.id=?
+2025-08-01 22:15:19.697 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tee1_0.event_id,tee1_0.category_id,tee1_0.company_id,tee1_0.event_type,tee1_0.matched_keyword,tee1_0.occurred_at,tee1_0.status,tee1_0.transaction_id from transaction_events tee1_0 where tee1_0.event_id=?
+2025-08-01 22:15:19.698 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select bte1_0.id,bte1_0.attributes,bte1_0.created_at from bank_transactions bte1_0 where bte1_0.id=?
+2025-08-01 22:15:19.698 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: A 커머스 (전체 카테고리: 3개, 현재 버전 카테고리: 3개)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 매출 (키워드: [네이버페이, 쿠팡], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 식비 (키워드: [배달의민족, 김밥천국], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 사무용품비 (키워드: [오피스디포], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: B 커머스 (전체 카테고리: 4개, 현재 버전 카테고리: 4개)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 교통비 (키워드: [카카오 T, 택시], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 통신비 (키워드: [KT, SKT], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 지급수수료 (키워드: [우체국, 등기], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 복리후생비 (키워드: [스타벅스], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 총 7개 매칭 규칙 생성 완료 (Rule Version: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 Trie 초기화 완료
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 네이버페이 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '네이버페이' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 쿠팡 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '쿠팡' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 배달의민족 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '배달의민족' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 김밥천국 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '김밥천국' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 오피스디포 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 01b7b568-efca-4f89-91aa-7827b58b17f8
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '오피스디포' -> A 커머스-사무용품비 (우선순위: 0)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 카카오 T -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '카카오 T' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 택시 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '택시' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: KT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'KT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: SKT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'SKT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 우체국 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '우체국' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 등기 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '등기' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 스타벅스 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 05c5957e-ffe0-4f56-8883-1d4bcf4a1f42
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '스타벅스' -> B 커머스-복리후생비 (우선순위: 0)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 규칙 7개로 Trie 구성 완료 (총 키워드: 12개)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 매칭: 카카오 T (위치: 0-4)
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 텍스트 '카카오 T' 에서 1개 키워드 매칭
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 거래 '카카오 T' - Trie에서 찾은 키워드 매칭: 1개
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 성공: 카카오 T -> B 커머스(교통비) [점수: 1, 우선순위: 0, 적합도: {:.2f}]
+2025-08-01 22:15:19.699 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 고급 매칭 성공 - 거래: 카카오 T, 키워드: [카카오 T], 회사: B 커머스, 카테고리: 교통비, 점수: 1
+2025-08-01 22:15:19.700 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tce1_0.id,tce1_0.category_id,tce1_0.category_name,tce1_0.classified_at,tce1_0.company_id,tce1_0.company_name,tce1_0.confidence,tce1_0.matched_keyword,tce1_0.rule_version,tce1_0.rule_version_id,tce1_0.status,tce1_0.transaction_id from transaction_classifications tce1_0 where tce1_0.id=?
+2025-08-01 22:15:19.700 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tee1_0.event_id,tee1_0.category_id,tee1_0.company_id,tee1_0.event_type,tee1_0.matched_keyword,tee1_0.occurred_at,tee1_0.status,tee1_0.transaction_id from transaction_events tee1_0 where tee1_0.event_id=?
+2025-08-01 22:15:19.701 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select bte1_0.id,bte1_0.attributes,bte1_0.created_at from bank_transactions bte1_0 where bte1_0.id=?
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: A 커머스 (전체 카테고리: 3개, 현재 버전 카테고리: 3개)
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 매출 (키워드: [네이버페이, 쿠팡], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 식비 (키워드: [배달의민족, 김밥천국], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 사무용품비 (키워드: [오피스디포], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: B 커머스 (전체 카테고리: 4개, 현재 버전 카테고리: 4개)
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 교통비 (키워드: [카카오 T, 택시], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 통신비 (키워드: [KT, SKT], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 지급수수료 (키워드: [우체국, 등기], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 복리후생비 (키워드: [스타벅스], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 총 7개 매칭 규칙 생성 완료 (Rule Version: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 Trie 초기화 완료
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 네이버페이 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '네이버페이' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 쿠팡 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '쿠팡' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 배달의민족 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '배달의민족' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 김밥천국 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '김밥천국' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 오피스디포 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 01b7b568-efca-4f89-91aa-7827b58b17f8
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '오피스디포' -> A 커머스-사무용품비 (우선순위: 0)
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 카카오 T -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.702 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '카카오 T' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 택시 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '택시' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: KT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'KT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: SKT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'SKT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 우체국 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '우체국' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 등기 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '등기' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 스타벅스 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 05c5957e-ffe0-4f56-8883-1d4bcf4a1f42
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '스타벅스' -> B 커머스-복리후생비 (우선순위: 0)
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 규칙 7개로 Trie 구성 완료 (총 키워드: 12개)
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 매칭: 네이버페이 (위치: 0-4)
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 텍스트 '네이버페이(주)' 에서 1개 키워드 매칭
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 거래 '네이버페이(주)' - Trie에서 찾은 키워드 매칭: 1개
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 성공: 네이버페이(주) -> A 커머스(매출) [점수: 1, 우선순위: 0, 적합도: {:.2f}]
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 고급 매칭 성공 - 거래: 네이버페이(주), 키워드: [네이버페이], 회사: A 커머스, 카테고리: 매출, 점수: 1
+2025-08-01 22:15:19.703 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tce1_0.id,tce1_0.category_id,tce1_0.category_name,tce1_0.classified_at,tce1_0.company_id,tce1_0.company_name,tce1_0.confidence,tce1_0.matched_keyword,tce1_0.rule_version,tce1_0.rule_version_id,tce1_0.status,tce1_0.transaction_id from transaction_classifications tce1_0 where tce1_0.id=?
+2025-08-01 22:15:19.704 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tee1_0.event_id,tee1_0.category_id,tee1_0.company_id,tee1_0.event_type,tee1_0.matched_keyword,tee1_0.occurred_at,tee1_0.status,tee1_0.transaction_id from transaction_events tee1_0 where tee1_0.event_id=?
+2025-08-01 22:15:19.705 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select bte1_0.id,bte1_0.attributes,bte1_0.created_at from bank_transactions bte1_0 where bte1_0.id=?
+2025-08-01 22:15:19.706 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: A 커머스 (전체 카테고리: 3개, 현재 버전 카테고리: 3개)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 매출 (키워드: [네이버페이, 쿠팡], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 식비 (키워드: [배달의민족, 김밥천국], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 사무용품비 (키워드: [오피스디포], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: B 커머스 (전체 카테고리: 4개, 현재 버전 카테고리: 4개)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 교통비 (키워드: [카카오 T, 택시], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 통신비 (키워드: [KT, SKT], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 지급수수료 (키워드: [우체국, 등기], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 복리후생비 (키워드: [스타벅스], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 총 7개 매칭 규칙 생성 완료 (Rule Version: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 Trie 초기화 완료
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 네이버페이 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '네이버페이' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 쿠팡 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '쿠팡' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 배달의민족 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '배달의민족' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 김밥천국 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '김밥천국' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 오피스디포 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 01b7b568-efca-4f89-91aa-7827b58b17f8
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '오피스디포' -> A 커머스-사무용품비 (우선순위: 0)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 카카오 T -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '카카오 T' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 택시 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '택시' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: KT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'KT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: SKT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'SKT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 우체국 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '우체국' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 등기 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '등기' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 스타벅스 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 05c5957e-ffe0-4f56-8883-1d4bcf4a1f42
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '스타벅스' -> B 커머스-복리후생비 (우선순위: 0)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 규칙 7개로 Trie 구성 완료 (총 키워드: 12개)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 매칭: 김밥천국 (위치: 0-3)
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 텍스트 '김밥천국 역삼점' 에서 1개 키워드 매칭
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 거래 '김밥천국 역삼점' - Trie에서 찾은 키워드 매칭: 1개
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 성공: 김밥천국 역삼점 -> A 커머스(식비) [점수: 1, 우선순위: 0, 적합도: {:.2f}]
+2025-08-01 22:15:19.707 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 고급 매칭 성공 - 거래: 김밥천국 역삼점, 키워드: [김밥천국], 회사: A 커머스, 카테고리: 식비, 점수: 1
+2025-08-01 22:15:19.708 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tce1_0.id,tce1_0.category_id,tce1_0.category_name,tce1_0.classified_at,tce1_0.company_id,tce1_0.company_name,tce1_0.confidence,tce1_0.matched_keyword,tce1_0.rule_version,tce1_0.rule_version_id,tce1_0.status,tce1_0.transaction_id from transaction_classifications tce1_0 where tce1_0.id=?
+2025-08-01 22:15:19.709 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tee1_0.event_id,tee1_0.category_id,tee1_0.company_id,tee1_0.event_type,tee1_0.matched_keyword,tee1_0.occurred_at,tee1_0.status,tee1_0.transaction_id from transaction_events tee1_0 where tee1_0.event_id=?
+2025-08-01 22:15:19.710 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select bte1_0.id,bte1_0.attributes,bte1_0.created_at from bank_transactions bte1_0 where bte1_0.id=?
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: A 커머스 (전체 카테고리: 3개, 현재 버전 카테고리: 3개)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 매출 (키워드: [네이버페이, 쿠팡], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 식비 (키워드: [배달의민족, 김밥천국], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 사무용품비 (키워드: [오피스디포], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: B 커머스 (전체 카테고리: 4개, 현재 버전 카테고리: 4개)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 교통비 (키워드: [카카오 T, 택시], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 통신비 (키워드: [KT, SKT], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 지급수수료 (키워드: [우체국, 등기], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 복리후생비 (키워드: [스타벅스], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 총 7개 매칭 규칙 생성 완료 (Rule Version: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 Trie 초기화 완료
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 네이버페이 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '네이버페이' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 쿠팡 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '쿠팡' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 배달의민족 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '배달의민족' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 김밥천국 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '김밥천국' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 오피스디포 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 01b7b568-efca-4f89-91aa-7827b58b17f8
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '오피스디포' -> A 커머스-사무용품비 (우선순위: 0)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 카카오 T -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '카카오 T' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 택시 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '택시' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: KT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'KT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: SKT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'SKT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 우체국 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '우체국' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 등기 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '등기' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 스타벅스 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 05c5957e-ffe0-4f56-8883-1d4bcf4a1f42
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '스타벅스' -> B 커머스-복리후생비 (우선순위: 0)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 규칙 7개로 Trie 구성 완료 (총 키워드: 12개)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 매칭: 쿠팡 (위치: 3-4)
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 텍스트 '(주)쿠팡' 에서 1개 키워드 매칭
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 거래 '(주)쿠팡' - Trie에서 찾은 키워드 매칭: 1개
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 성공: (주)쿠팡 -> A 커머스(매출) [점수: 1, 우선순위: 0, 적합도: {:.2f}]
+2025-08-01 22:15:19.711 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 고급 매칭 성공 - 거래: (주)쿠팡, 키워드: [쿠팡], 회사: A 커머스, 카테고리: 매출, 점수: 1
+2025-08-01 22:15:19.712 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tce1_0.id,tce1_0.category_id,tce1_0.category_name,tce1_0.classified_at,tce1_0.company_id,tce1_0.company_name,tce1_0.confidence,tce1_0.matched_keyword,tce1_0.rule_version,tce1_0.rule_version_id,tce1_0.status,tce1_0.transaction_id from transaction_classifications tce1_0 where tce1_0.id=?
+2025-08-01 22:15:19.713 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tee1_0.event_id,tee1_0.category_id,tee1_0.company_id,tee1_0.event_type,tee1_0.matched_keyword,tee1_0.occurred_at,tee1_0.status,tee1_0.transaction_id from transaction_events tee1_0 where tee1_0.event_id=?
+2025-08-01 22:15:19.713 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select bte1_0.id,bte1_0.attributes,bte1_0.created_at from bank_transactions bte1_0 where bte1_0.id=?
+2025-08-01 22:15:19.714 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: A 커머스 (전체 카테고리: 3개, 현재 버전 카테고리: 3개)
+2025-08-01 22:15:19.714 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 매출 (키워드: [네이버페이, 쿠팡], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.714 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 식비 (키워드: [배달의민족, 김밥천국], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.714 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 사무용품비 (키워드: [오피스디포], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.714 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: B 커머스 (전체 카테고리: 4개, 현재 버전 카테고리: 4개)
+2025-08-01 22:15:19.714 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 교통비 (키워드: [카카오 T, 택시], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.714 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 통신비 (키워드: [KT, SKT], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.714 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 지급수수료 (키워드: [우체국, 등기], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.714 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 복리후생비 (키워드: [스타벅스], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 총 7개 매칭 규칙 생성 완료 (Rule Version: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 Trie 초기화 완료
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 네이버페이 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '네이버페이' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 쿠팡 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '쿠팡' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 배달의민족 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '배달의민족' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 김밥천국 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '김밥천국' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 오피스디포 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 01b7b568-efca-4f89-91aa-7827b58b17f8
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '오피스디포' -> A 커머스-사무용품비 (우선순위: 0)
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 카카오 T -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '카카오 T' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 택시 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '택시' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: KT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'KT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: SKT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'SKT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 우체국 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '우체국' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 등기 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '등기' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 스타벅스 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 05c5957e-ffe0-4f56-8883-1d4bcf4a1f42
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '스타벅스' -> B 커머스-복리후생비 (우선순위: 0)
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 규칙 7개로 Trie 구성 완료 (총 키워드: 12개)
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 텍스트 '개인용도 이체' 에서 0개 키워드 매칭
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 거래 '개인용도 이체' - Trie에서 찾은 키워드 매칭: 0개
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 결과 없음: description='개인용도 이체', amount=null
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 실패 - 거래: 개인용도 이체
+2025-08-01 22:15:19.715 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tce1_0.id,tce1_0.category_id,tce1_0.category_name,tce1_0.classified_at,tce1_0.company_id,tce1_0.company_name,tce1_0.confidence,tce1_0.matched_keyword,tce1_0.rule_version,tce1_0.rule_version_id,tce1_0.status,tce1_0.transaction_id from transaction_classifications tce1_0 where tce1_0.id=?
+2025-08-01 22:15:19.716 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tee1_0.event_id,tee1_0.category_id,tee1_0.company_id,tee1_0.event_type,tee1_0.matched_keyword,tee1_0.occurred_at,tee1_0.status,tee1_0.transaction_id from transaction_events tee1_0 where tee1_0.event_id=?
+2025-08-01 22:15:19.717 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select bte1_0.id,bte1_0.attributes,bte1_0.created_at from bank_transactions bte1_0 where bte1_0.id=?
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: A 커머스 (전체 카테고리: 3개, 현재 버전 카테고리: 3개)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 매출 (키워드: [네이버페이, 쿠팡], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 식비 (키워드: [배달의민족, 김밥천국], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 사무용품비 (키워드: [오피스디포], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: B 커머스 (전체 카테고리: 4개, 현재 버전 카테고리: 4개)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 교통비 (키워드: [카카오 T, 택시], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 통신비 (키워드: [KT, SKT], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 지급수수료 (키워드: [우체국, 등기], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 복리후생비 (키워드: [스타벅스], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 총 7개 매칭 규칙 생성 완료 (Rule Version: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 Trie 초기화 완료
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 네이버페이 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '네이버페이' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 쿠팡 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '쿠팡' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 배달의민족 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '배달의민족' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 김밥천국 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '김밥천국' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 오피스디포 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 01b7b568-efca-4f89-91aa-7827b58b17f8
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '오피스디포' -> A 커머스-사무용품비 (우선순위: 0)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 카카오 T -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '카카오 T' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 택시 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '택시' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: KT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'KT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: SKT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'SKT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 우체국 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '우체국' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 등기 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '등기' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 스타벅스 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 05c5957e-ffe0-4f56-8883-1d4bcf4a1f42
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '스타벅스' -> B 커머스-복리후생비 (우선순위: 0)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 규칙 7개로 Trie 구성 완료 (총 키워드: 12개)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 매칭: 오피스디포 (위치: 0-4)
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 텍스트 '오피스디포(주)' 에서 1개 키워드 매칭
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 거래 '오피스디포(주)' - Trie에서 찾은 키워드 매칭: 1개
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 성공: 오피스디포(주) -> A 커머스(사무용품비) [점수: 1, 우선순위: 0, 적합도: {:.2f}]
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 고급 매칭 성공 - 거래: 오피스디포(주), 키워드: [오피스디포], 회사: A 커머스, 카테고리: 사무용품비, 점수: 1
+2025-08-01 22:15:19.718 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tce1_0.id,tce1_0.category_id,tce1_0.category_name,tce1_0.classified_at,tce1_0.company_id,tce1_0.company_name,tce1_0.confidence,tce1_0.matched_keyword,tce1_0.rule_version,tce1_0.rule_version_id,tce1_0.status,tce1_0.transaction_id from transaction_classifications tce1_0 where tce1_0.id=?
+2025-08-01 22:15:19.719 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tee1_0.event_id,tee1_0.category_id,tee1_0.company_id,tee1_0.event_type,tee1_0.matched_keyword,tee1_0.occurred_at,tee1_0.status,tee1_0.transaction_id from transaction_events tee1_0 where tee1_0.event_id=?
+2025-08-01 22:15:19.720 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select bte1_0.id,bte1_0.attributes,bte1_0.created_at from bank_transactions bte1_0 where bte1_0.id=?
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: A 커머스 (전체 카테고리: 3개, 현재 버전 카테고리: 3개)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 매출 (키워드: [네이버페이, 쿠팡], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 식비 (키워드: [배달의민족, 김밥천국], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: A 커머스 - 사무용품비 (키워드: [오피스디포], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 회사 처리 중: B 커머스 (전체 카테고리: 4개, 현재 버전 카테고리: 4개)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 교통비 (키워드: [카카오 T, 택시], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 통신비 (키워드: [KT, SKT], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 지급수수료 (키워드: [우체국, 등기], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 매칭 규칙 추가: B 커머스 - 복리후생비 (키워드: [스타벅스], 우선순위: 0, 버전: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 총 7개 매칭 규칙 생성 완료 (Rule Version: b33b8c66-43da-423f-827d-b6a564fc6776)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 Trie 초기화 완료
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 네이버페이 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '네이버페이' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 쿠팡 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 0a437f98-e3ec-4c74-b167-2fa6a4c72fbe
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '쿠팡' -> A 커머스-매출 (우선순위: 0)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 배달의민족 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '배달의민족' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 김밥천국 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 1b4c94cb-56d5-408b-9f99-a92d92ab05fa
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '김밥천국' -> A 커머스-식비 (우선순위: 0)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 오피스디포 -> Company: 568615cc-2a3a-4bcf-859f-4b22cba8c3c1, Category: 01b7b568-efca-4f89-91aa-7827b58b17f8
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '오피스디포' -> A 커머스-사무용품비 (우선순위: 0)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 카카오 T -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '카카오 T' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 택시 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 2886d91f-fb9a-40b2-a1f4-3f4ee7db136d
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '택시' -> B 커머스-교통비 (우선순위: 0)
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: KT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.722 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'KT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.723 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: SKT -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: ed6679b3-bdcd-4b48-8dc9-d9ff314c2083
+2025-08-01 22:15:19.723 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: 'SKT' -> B 커머스-통신비 (우선순위: 0)
+2025-08-01 22:15:19.723 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 우체국 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.723 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '우체국' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.723 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 등기 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 35a19877-fe4c-44f3-8b18-fca87b1cc737
+2025-08-01 22:15:19.723 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '등기' -> B 커머스-지급수수료 (우선순위: 0)
+2025-08-01 22:15:19.723 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 추가: 스타벅스 -> Company: 70fd80c1-979b-4226-bc5e-60c0fa52c7df, Category: 05c5957e-ffe0-4f56-8883-1d4bcf4a1f42
+2025-08-01 22:15:19.723 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - Trie에 키워드 추가: '스타벅스' -> B 커머스-복리후생비 (우선순위: 0)
+2025-08-01 22:15:19.723 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 규칙 7개로 Trie 구성 완료 (총 키워드: 12개)
+2025-08-01 22:15:19.723 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 매칭: 우체국 (위치: 0-2)
+2025-08-01 22:15:19.723 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 키워드 매칭: 등기 (위치: 4-5)
+2025-08-01 22:15:19.723 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.matching.KeywordTrie] - 텍스트 '우체국(등기)' 에서 2개 키워드 매칭
+2025-08-01 22:15:19.723 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 거래 '우체국(등기)' - Trie에서 찾은 키워드 매칭: 2개
+2025-08-01 22:15:19.723 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.m.AdvancedTransactionMatcher] - 매칭 성공: 우체국(등기) -> B 커머스(지급수수료) [점수: 2, 우선순위: 0, 적합도: {:.2f}]
+2025-08-01 22:15:19.723 [http-nio-8080-exec-3] DEBUG [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 고급 매칭 성공 - 거래: 우체국(등기), 키워드: [우체국, 등기], 회사: B 커머스, 카테고리: 지급수수료, 점수: 2
+2025-08-01 22:15:19.723 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tce1_0.id,tce1_0.category_id,tce1_0.category_name,tce1_0.classified_at,tce1_0.company_id,tce1_0.company_name,tce1_0.confidence,tce1_0.matched_keyword,tce1_0.rule_version,tce1_0.rule_version_id,tce1_0.status,tce1_0.transaction_id from transaction_classifications tce1_0 where tce1_0.id=?
+2025-08-01 22:15:19.724 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - select tee1_0.event_id,tee1_0.category_id,tee1_0.company_id,tee1_0.event_type,tee1_0.matched_keyword,tee1_0.occurred_at,tee1_0.status,tee1_0.transaction_id from transaction_events tee1_0 where tee1_0.event_id=?
+2025-08-01 22:15:19.729 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.service.RuleVersionService] - 규칙 버전 v20250801-221519을 사용 완료 및 비활성화
+2025-08-01 22:15:19.729 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.TransactionClassificationServiceImpl] - 총 9건의 거래 처리 완료 (규칙 버전: v20250801-221519 - 비활성화됨)
+2025-08-01 22:15:19.731 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into account_categories (category_id,category_name,company_id,exclude_keywords,max_amount,min_amount,priority,rule_version_id,id) values (?,?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.732 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into category_keywords (category_id,keyword,id) values (?,?,?)
+2025-08-01 22:15:19.733 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into bank_transactions (attributes,created_at,id) values (?,?,?)
+2025-08-01 22:15:19.737 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_classifications (category_id,category_name,classified_at,company_id,company_name,confidence,matched_keyword,rule_version,rule_version_id,status,transaction_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.740 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_events (category_id,company_id,event_type,matched_keyword,occurred_at,status,transaction_id,event_id) values (?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.742 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into bank_transactions (attributes,created_at,id) values (?,?,?)
+2025-08-01 22:15:19.743 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_classifications (category_id,category_name,classified_at,company_id,company_name,confidence,matched_keyword,rule_version,rule_version_id,status,transaction_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.744 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_events (category_id,company_id,event_type,matched_keyword,occurred_at,status,transaction_id,event_id) values (?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.745 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into bank_transactions (attributes,created_at,id) values (?,?,?)
+2025-08-01 22:15:19.746 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_classifications (category_id,category_name,classified_at,company_id,company_name,confidence,matched_keyword,rule_version,rule_version_id,status,transaction_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.746 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_events (category_id,company_id,event_type,matched_keyword,occurred_at,status,transaction_id,event_id) values (?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.747 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into bank_transactions (attributes,created_at,id) values (?,?,?)
+2025-08-01 22:15:19.748 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_classifications (category_id,category_name,classified_at,company_id,company_name,confidence,matched_keyword,rule_version,rule_version_id,status,transaction_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.749 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_events (category_id,company_id,event_type,matched_keyword,occurred_at,status,transaction_id,event_id) values (?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.750 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into bank_transactions (attributes,created_at,id) values (?,?,?)
+2025-08-01 22:15:19.751 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_classifications (category_id,category_name,classified_at,company_id,company_name,confidence,matched_keyword,rule_version,rule_version_id,status,transaction_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.752 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_events (category_id,company_id,event_type,matched_keyword,occurred_at,status,transaction_id,event_id) values (?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.753 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into bank_transactions (attributes,created_at,id) values (?,?,?)
+2025-08-01 22:15:19.755 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_classifications (category_id,category_name,classified_at,company_id,company_name,confidence,matched_keyword,rule_version,rule_version_id,status,transaction_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.756 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_events (category_id,company_id,event_type,matched_keyword,occurred_at,status,transaction_id,event_id) values (?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.759 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into bank_transactions (attributes,created_at,id) values (?,?,?)
+2025-08-01 22:15:19.762 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_classifications (category_id,category_name,classified_at,company_id,company_name,confidence,matched_keyword,rule_version,rule_version_id,status,transaction_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.763 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_events (category_id,company_id,event_type,matched_keyword,occurred_at,status,transaction_id,event_id) values (?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.765 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into bank_transactions (attributes,created_at,id) values (?,?,?)
+2025-08-01 22:15:19.766 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_classifications (category_id,category_name,classified_at,company_id,company_name,confidence,matched_keyword,rule_version,rule_version_id,status,transaction_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.767 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_events (category_id,company_id,event_type,matched_keyword,occurred_at,status,transaction_id,event_id) values (?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.768 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into bank_transactions (attributes,created_at,id) values (?,?,?)
+2025-08-01 22:15:19.769 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_classifications (category_id,category_name,classified_at,company_id,company_name,confidence,matched_keyword,rule_version,rule_version_id,status,transaction_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.770 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - insert into transaction_events (category_id,company_id,event_type,matched_keyword,occurred_at,status,transaction_id,event_id) values (?,?,?,?,?,?,?,?)
+2025-08-01 22:15:19.777 [http-nio-8080-exec-3] DEBUG [org.hibernate.SQL] - update rule_versions set active=?,description=?,is_consumed=?,rule_data=?,uploaded_at=?,used_at=?,version_name=? where id=?
+2025-08-01 22:15:19.785 [http-nio-8080-exec-3] INFO  [c.s.o.a.a.s.ProcessTransactionUseCaseImpl] - 자동 회계 처리 완료: 총 9건 처리완료 (분류: 7건, 미분류: 2건)
+2025-08-01 22:16:33.603 [SpringApplicationShutdownHook] INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01 22:16:33.605 [SpringApplicationShutdownHook] DEBUG [org.hibernate.SQL] - alter table if exists account_categories drop constraint if exists FKf6hrc8xcb9tt88juq1vywdtvd
+2025-08-01 22:16:33.613 [SpringApplicationShutdownHook] DEBUG [org.hibernate.SQL] - alter table if exists category_keywords drop constraint if exists FKilf25is1yjnb4hdndxbv0soii
+2025-08-01 22:16:33.614 [SpringApplicationShutdownHook] DEBUG [org.hibernate.SQL] - drop table if exists account_categories cascade
+2025-08-01 22:16:33.618 [SpringApplicationShutdownHook] DEBUG [org.hibernate.SQL] - drop table if exists bank_transactions cascade
+2025-08-01 22:16:33.620 [SpringApplicationShutdownHook] DEBUG [org.hibernate.SQL] - drop table if exists category_keywords cascade
+2025-08-01 22:16:33.622 [SpringApplicationShutdownHook] DEBUG [org.hibernate.SQL] - drop table if exists companies cascade
+2025-08-01 22:16:33.624 [SpringApplicationShutdownHook] DEBUG [org.hibernate.SQL] - drop table if exists rule_versions cascade
+2025-08-01 22:16:33.627 [SpringApplicationShutdownHook] DEBUG [org.hibernate.SQL] - drop table if exists transaction_classifications cascade
+2025-08-01 22:16:33.629 [SpringApplicationShutdownHook] DEBUG [org.hibernate.SQL] - drop table if exists transaction_events cascade
+2025-08-01 22:16:33.647 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource] - OnnuriAccountingHikariCP - Shutdown initiated...
+2025-08-01 22:16:33.652 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource] - OnnuriAccountingHikariCP - Shutdown completed.

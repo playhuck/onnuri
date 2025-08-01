@@ -20,9 +20,9 @@ spring:
   
   # Database Configuration
   datasource:
-    url: jdbc:postgresql://localhost:5432/onnuri_accounting
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    url: jdbc:postgresql://localhost:5432/onnuri
+    username: ${DB_USERNAME:onnuri}
+    password: ${DB_PASSWORD:onnuri123}
     driver-class-name: org.postgresql.Driver
     hikari:
       connection-timeout: 20000
@@ -101,9 +101,9 @@ management:
   endpoint:
     health:
       show-details: always
-  metrics:
-    export:
-      prometheus:
+  prometheus:
+    metrics:
+      export:
         enabled: true
 
 # Application Custom Properties
