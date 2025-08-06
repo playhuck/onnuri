@@ -11,7 +11,7 @@ docker-compose up -d
 - postgresql url : localhost:5432
 
 ### 3. API
-- Notion 3. 실행 및 테스트 가이드 (README.md에 포함) 참고
+- Notion 참고
 
 ### Stack
 - Java 21
